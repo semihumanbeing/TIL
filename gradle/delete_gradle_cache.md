@@ -13,3 +13,10 @@ Gradle의 dependencies 라이브러리 내의 캐시 폴더도 삭제했다.
 ```
 rm -rf $HOME/.gradle/caches/
 ```
+
+그레이들 실행을 하는데 3 busy Daemons could not be reused 로그가 나와서
+
+```
+gradle --stop 
+```
+으로 daemon 스레드도 멈췄다.
