@@ -9,6 +9,8 @@ nohup은 아래와 같이 사용할 수 있다.
 
 ```
 nohup ./gradlew bootRun >Output.log 2>&1 &
+
+nohup java -jar {프로그램 명} >Output.log 2>&1 &
 ```
 이렇게 실행하면 output.log 라는 파일에 로그가 찍히고
 백그라운드에서 프로그램이 실행된다.
