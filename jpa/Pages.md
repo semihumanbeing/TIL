@@ -4,6 +4,7 @@ Page 객체로 페이지 구현하는 법은 페이지 유틸을 만들어서 �
 
 jpa repository 에 Page 객체를 만든다.
 ```java
+// Native query 로 할 경우 countQuery 를 사용해야 한다.
 Page<PcStatusJoinStatusHistoryDTO> findAll(Pageable pageable);
 ```
 
