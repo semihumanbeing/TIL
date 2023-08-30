@@ -44,7 +44,8 @@ public class TestVO {
 
 그리고 데이터 가공을 위해 이름, 전화번호, 비밀이 담긴 VO 를 만들었다.
 
-![Untitled](API%20%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%20%E1%84%8C%E1%85%A5%E1%84%8C%E1%85%A1%E1%86%BC%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%20-%20Filter%E1%84%8B%E1%85%AA%20AOP%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20e149bc53e88847b889f829e2c65e1622/Untitled.png)
+![Untitled](https://github.com/semihumanbeing/TIL/assets/99929191/0a7e9a4d-9a16-4a5c-82f4-f7d3d5b1e98e)
+
 
 위와 같은 requestBody 에 친구에 대한 정보를 담아 요청을 보내면 아래와 같은 응답이 돌아온다.
 
@@ -280,8 +281,8 @@ Response를 보낼 때에는 직접 반환을 해주어야 응답이 돌아온�
 response에서는 전화번호도 저장하지 않기로 했다.
 
 이렇게 적용한 뒤 아까 사용한 API를 그대로 사용하면 
+![Untitled 1](https://github.com/semihumanbeing/TIL/assets/99929191/c0f76592-6458-4f6f-93f8-34479e7210f4)
 
-![Untitled](API%20%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%20%E1%84%8C%E1%85%A5%E1%84%8C%E1%85%A1%E1%86%BC%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%20-%20Filter%E1%84%8B%E1%85%AA%20AOP%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20e149bc53e88847b889f829e2c65e1622/Untitled%201.png)
 
 request, response 시 이런식으로 각각 다른 데이터를 담아 로그를 저장할 수 있다.
 
@@ -356,8 +357,7 @@ public class AnotherApiController {
     }
 }
 ```
-
-![Untitled](API%20%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%20%E1%84%8C%E1%85%A5%E1%84%8C%E1%85%A1%E1%86%BC%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%20-%20Filter%E1%84%8B%E1%85%AA%20AOP%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20e149bc53e88847b889f829e2c65e1622/Untitled%202.png)
+![Untitled 2](https://github.com/semihumanbeing/TIL/assets/99929191/6e04c4b5-eb32-4709-a64d-0b0e3a296abe)
 
 /api/test2 를 사용하면 8081의 api에 요청을 보내고 받은 응답을 보여준다.
 
@@ -471,8 +471,7 @@ public void afterApi(JoinPoint joinPoint, Exception exception) {
 위와 같이 간단히 출력만 하는 방식으로 만들었다. 
 
 이제 /api/test2 를 사용하면
-
-![Untitled](API%20%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%20%E1%84%8C%E1%85%A5%E1%84%8C%E1%85%A1%E1%86%BC%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%20-%20Filter%E1%84%8B%E1%85%AA%20AOP%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20e149bc53e88847b889f829e2c65e1622/Untitled%203.png)
+![Untitled 3](https://github.com/semihumanbeing/TIL/assets/99929191/872a6e2f-3060-4134-bcac-a0c42f949637)
 
 Controller나 Service에 어떤 변동도 없이 
 
@@ -485,9 +484,10 @@ Controller나 Service에 어떤 변동도 없이
 
 또한 에러를 일부러 발생 시켰을 때에도 (name 이 null이면 에러를 반환하게 했다)
 
-![Untitled](API%20%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%20%E1%84%8C%E1%85%A5%E1%84%8C%E1%85%A1%E1%86%BC%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%20-%20Filter%E1%84%8B%E1%85%AA%20AOP%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20e149bc53e88847b889f829e2c65e1622/Untitled%204.png)
+![Untitled 4](https://github.com/semihumanbeing/TIL/assets/99929191/bad1c8be-807a-4068-b921-dcdd8ec64f45)
 
-![Untitled](API%20%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%20%E1%84%8C%E1%85%A5%E1%84%8C%E1%85%A1%E1%86%BC%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%20-%20Filter%E1%84%8B%E1%85%AA%20AOP%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20e149bc53e88847b889f829e2c65e1622/Untitled%205.png)
+![Untitled 5](https://github.com/semihumanbeing/TIL/assets/99929191/d465fe54-238a-4d21-9046-b2ff5018c1d5)
+
 
 에러로 외부 API에서 받은 응답과 내가 response로 보낸 데이터까지 저장할 수 있다.
 
